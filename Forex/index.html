@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forex Chart</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        * {
+            text-decoration: none;
+            color: #020202;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        table {
+            font-family: 'Montserrat', sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        table th a {
+            color: #f2f2f2 !important;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Global Rates Table</h2>
+    <table style="width:90%;margin: 20px auto 20px !important;border:1px solid #CCCCCC;" cellpadding="2" cellspacing="0">
+        <tbody>
+            <tr class="tableheader" style="color: #f2f2f2 !important;">
+                <th><a class="tableheaderlink" href="javascript:__doPostBack('ctl01','')">Name of interest rate</a></th>
+                <th>Country Symbols</th>
+                <th><a class="tableheaderlink" href="javascript:__doPostBack('ctl02','')">country/region</a></th>
+                <th align="center"><a class="tableheaderlink" href="javascript:__doPostBack('ctl03','')">current rate</a></th>
+                <th align="center"><a class="tableheaderlink" href="javascript:__doPostBack('ctl04','')">None</a></th>
+                <th align="center"><a class="tableheaderlink" href="javascript:__doPostBack('ctl05','')">previous rate</a></th>
+                <th><a class="tableheaderlink" href="javascript:__doPostBack('ctl06','')">change</a></th>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href=""
+                        title="BoJ overnight call rate - Japanese central bank’s interest rates">Japanese interest rate
+                        BoJ</a></td>
+                <td>JPY</td>
+                <td>Japan</td>
+                <td align="center">-0.100%</td>
+                <td align="center"><img src="/en/images/misc/arrow_green_down.gif" alt=""></td>
+                <td align="center">0.000%</td>
+                <td>02-01-2016</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href=""
+                        title="SNB target range for 3-month LIBOR CHF - Swiss central bank’s interest rate">Swiss interest
+                        rate SNB</a></td>
+                <td>CHF</td>
+                <td>Switzerland</td>
+                <td align="center">1.750%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">1.500%</td>
+                <td>06-22-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href=""
+                        title="Nationalbanken lending rate - Danish central bank’s interest rate">Danish interest rate
+                        Nationalbanken</a></td>
+                <td>DKK</td>
+                <td>Denmark</td>
+                <td align="center">3.500%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">3.250%</td>
+                <td>07-27-2023</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-south-korea/bank-of-korea-interest-rate.aspx"
+                        title="Bank of Korea Base Rate - interest rate central bank of South Korea">Bank of Korea
+                        interest rate</a></td>
+                <td>KRW</td>
+                <td>South Korea</td>
+                <td align="center">3.500%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">3.250%</td>
+                <td>01-13-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-china/pbc-interest-rate.aspx"
+                        title="PBC central bank base interest rate - Chinese central bank’s interest rate">Chinese
+                        interest rate PBC</a></td>
+                <td>CNY</td>
+                <td>China</td>
+                <td align="center">3.550%</td>
+                <td align="center"><img src="/en/images/misc/arrow_green_down.gif" alt=""></td>
+                <td align="center">3.650%</td>
+                <td>06-20-2023</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-sweden/riksbank-interest-rate.aspx"
+                        title="Riksbank repo rate - Swedish central bank’s interest rate">Swedish interest rate
+                        Riksbank</a></td>
+                <td>SEK</td>
+                <td>Sweden</td>
+                <td align="center">3.750%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">3.500%</td>
+                <td>06-30-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-norway/kpr-interest-rate.aspx"
+                        title="KPR - Key Policy Rate - interest rate central bank of Norway">Norwegian interest rate</a>
+                </td>
+                <td>NOK</td>
+                <td>Norway</td>
+                <td align="center">3.750%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">3.250%</td>
+                <td>06-22-2023</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-australia/rba-interest-rate.aspx"
+                        title="RBA Official Cash Rate - Australian central bank’s interest rate">Australian interest
+                        rate RBA</a></td>
+                <td>AUD</td>
+                <td>Australia</td>
+                <td align="center">4.100%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">3.850%</td>
+                <td>06-06-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/european-central-bank/ecb-interest-rate.aspx"
+                        title="ECB refi rate - European Central Bank’s interest rate">European interest rate ECB</a>
+                </td>
+                <td>EUR</td>
+                <td>Europe</td>
+                <td align="center">4.250%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">4.000%</td>
+                <td>07-27-2023</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-israel/boi-interest-rate.aspx"
+                        title="BOI headline rate of interest - interest rate central bank of Israel">Israeli interest
+                        rate BOI</a></td>
+                <td>ILS</td>
+                <td>Israel</td>
+                <td align="center">4.750%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">4.500%</td>
+                <td>05-22-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-england/boe-interest-rate.aspx"
+                        title="BoE Official Bank Rate - British central bank’s interest rate England">British interest
+                        rate BoE</a></td>
+                <td>GBP</td>
+                <td>Great Britain</td>
+                <td align="center">5.000%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">4.500%</td>
+                <td>06-22-2023</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-canada/boc-interest-rate.aspx"
+                        title="BOC key interest rate - Canadian central bank’s interest rate">Canadian interest rate
+                        BOC</a></td>
+                <td>CAD</td>
+                <td>Canada</td>
+                <td align="center">5.000%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">4.750%</td>
+                <td>07-12-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-america/fed-interest-rate.aspx"
+                        title="United States FED Federal Funds Rate - American central bank’s interest rate">American
+                        interest rate FED</a></td>
+                <td>USD</td>
+                <td>United States</td>
+                <td align="center">5.500%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">5.250%</td>
+                <td>07-26-2023</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-new-zealand/rbnz-interest-rate.aspx"
+                        title="RBNZ Official Cash rate - interest rate central bank of New Zealand">New Zealand interest
+                        rate</a></td>
+                <td>NZD</td>
+                <td>New Zealand</td>
+                <td align="center">5.500%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">5.250%</td>
+                <td>05-24-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-saudi-arabia/sama-interest-rate.aspx"
+                        title="SAMA Repo Rate - interest rate central bank of Saudi Arabia">Saudi Ariabian interest
+                        rate</a></td>
+                <td>SAR</td>
+                <td>Saudi Arabia</td>
+                <td align="center">6.000%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">5.750%</td>
+                <td>07-26-2023</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-india/rbi-interest-rate.aspx"
+                        title="RBI repo rate - Indian central bank’s interest rate">Indian interest rate RBI</a></td>
+                <td>INR</td>
+                <td>India</td>
+                <td align="center">6.500%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">6.250%</td>
+                <td>02-08-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-indonesia/bi-interest-rate.aspx"
+                        title="BI rate - interest rate central bank of Indonesia">Indonesian interest rate BI</a></td>
+                <td>IDR</td>
+                <td>Indonesia</td>
+                <td align="center">6.500%</td>
+                <td align="center"><img src="/en/images/misc/arrow_green_down.gif" alt=""></td>
+                <td align="center">6.750%</td>
+                <td>06-16-2016</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-poland/nbp-interest-rate.aspx"
+                        title="NBP reference rate - interest rate central bank of Poland">Polish interest rate</a></td>
+                <td>PLN</td>
+                <td>Poland</td>
+                <td align="center">6.750%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">6.500%</td>
+                <td>09-07-2022</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-czech-republic/cnb-interest-rate.aspx"
+                        title="CNB 2 week Repo Rate - interest rate Czech Republic central bank">Czech interest rate
+                        CNB</a></td>
+                <td>CZK</td>
+                <td>Czech Republic</td>
+                <td align="center">7.000%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">5.750%</td>
+                <td>06-22-2022</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-south-africa/sarb-interest-rate.aspx"
+                        title="SARB repo rate - South African central bank’s interest rate ">South African interest rate
+                        SARB</a></td>
+                <td>ZAR</td>
+                <td>South Africa</td>
+                <td align="center">8.250%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">7.750%</td>
+                <td>05-25-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-russia/cbr-interest-rate.aspx"
+                        title="CBR refinancing rate - Russian central bank’s interest rate">Russian interest rate
+                        CBR</a></td>
+                <td>RUB</td>
+                <td>Russia</td>
+                <td align="center">8.500%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">7.500%</td>
+                <td>07-21-2023</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-chile/mpr-interest-rate.aspx"
+                        title="MPR - Monetary Policy Rate - interest rate central bank of Chile">Banco Central interest
+                        rate</a></td>
+                <td>CLP</td>
+                <td>Chile</td>
+                <td align="center">10.250%</td>
+                <td align="center"><img src="/en/images/misc/arrow_green_down.gif" alt=""></td>
+                <td align="center">11.250%</td>
+                <td>07-28-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-mexico/banxico-interest-rate.aspx"
+                        title="Banxico overnight interbank rate - Mexican central bank's interest rates">Mexican
+                        interest rate Banxico</a></td>
+                <td>MXN</td>
+                <td>Mexico</td>
+                <td align="center">11.250%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">11.000%</td>
+                <td>03-30-2023</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-hungary/mnb-interest-rate.aspx"
+                        title="MNB key policy rate - interest rate central bank of Hungary">Hungarian interest rate</a>
+                </td>
+                <td>HUF</td>
+                <td>Hungary</td>
+                <td align="center">13.000%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">11.750%</td>
+                <td>09-27-2022</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-brazil/bacen-interest-rate.aspx"
+                        title="BACEN SELIC rate - Brazilian central bank’s interest rate">Brazilian interest rate
+                        BACEN</a></td>
+                <td>BRL</td>
+                <td>Brazil</td>
+                <td align="center">13.750%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">13.250%</td>
+                <td>08-04-2022</td>
+            </tr>
+    
+            <tr class="tabledata2">
+                <td><a href="/en/interest-rates/central-banks/central-bank-turkey/tcmb-interest-rate.aspx"
+                        title="Repo Rate - interest rate central bank of Turkey">Turkish interest rate</a></td>
+                <td>TRY</td>
+                <td>Turkey</td>
+                <td align="center">15.000%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">14.000%</td>
+                <td>07-27-2023</td>
+            </tr>
+    
+            <tr class="tabledata1">
+                <td><a href="/en/interest-rates/central-banks/central-bank-argentina/bcra-interest-rate.aspx"
+                        title="Policy Interest Rate - interest rate central bank of Argentina">Argentinian interest
+                        rate</a></td>
+                <td>ARS</td>
+                <td>Argentina</td>
+                <td align="center">55.000%</td>
+                <td align="center"><img src="/en/images/misc/arrow_red_up.gif" alt=""></td>
+                <td align="center">38.000%</td>
+                <td>06-02-2023</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Rules To Be Followed</h2>
+    <ul style="width: 90%; margin: 0px auto 20px; text-align: left; list-style: decimal;">
+        <li>News with High effect or many low plus one or two major news events</li>
+        <li>Couple two pairs that are of different interest rate</li>
+    </ul>
+    <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Tools</h2>
+    <ul style="width: 90%; margin: 0px auto 20px; text-align: left; list-style: decimal;">
+        <li>MyFxbook - Economic Calender</li>
+        <li>Global Rates - Central Banks</li>
+        <li>Quotex - Binary</li>
+        <li>Exness - Speculator</li>
+    </ul>
+
+</body>
+
+</html>
