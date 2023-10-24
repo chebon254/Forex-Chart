@@ -30,7 +30,6 @@
     <style>
         * {
             text-decoration: none;
-            color: #353A4D;
             font-family: 'Montserrat', sans-serif;
         }
 
@@ -69,6 +68,27 @@
         li {
             margin: 4px 0px;
         }
+        svg{
+            height: 20px !important;
+            width: 20px !important;
+        }
+        :root{
+            --bs-red: #a5092e !important;
+            --bs-green: #059d10 !important;
+        }
+        svg.fa-circle-down{
+            color: var(--bs-green) !important;
+        }
+        svg.fa-circle-up{
+            fill: var(--bs-red) !important;
+        }
+        tbody tr td:nth-child(1),
+        tbody tr td:nth-child(2),
+        tbody tr td:nth-child(4),
+        tbody tr td:nth-child(5),
+        tbody tr td:nth-child(6){
+            color: #353A4D !important;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,29 +99,26 @@
 
 <body>
     <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Global Rates Table</h2>
-    <table class="table " id="arranged-table">
-        <caption>
-            latest interest rates
-        </caption>
+    <table class="table " id="arranged-table" style="width:90%;margin: 20px auto 20px !important;border:1px solid #CCCCCC;">
         <thead>
-            <tr>
+            <tr style="color: #CCCCCC !important;">
                 <th class="">
-                    <div class="table-normal text-start"></div>
+                    <div class="table-normal text-start"style="color: #CCCCCC !important;"></div>
                 </th>
                 <th class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Country/Region</div>
+                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Country/Region</div>
                 </th>
                 <th class="">
-                    <div class="table-normal text-end">Current</div>
+                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Current</div>
                 </th>
                 <th class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">Direction</div>
+                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Direction</div>
                 </th>
                 <th class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">Previous</div>
+                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Previous</div>
                 </th>
                 <th class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">Change</div>
+                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Change</div>
                 </th>
             </tr>
         </thead>
