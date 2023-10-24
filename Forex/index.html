@@ -68,25 +68,30 @@
         li {
             margin: 4px 0px;
         }
-        svg{
+
+        svg {
             height: 20px !important;
             width: 20px !important;
         }
-        :root{
+
+        :root {
             --bs-red: #a5092e !important;
             --bs-green: #059d10 !important;
         }
-        svg.fa-circle-down{
+
+        svg.fa-circle-down {
             color: var(--bs-green) !important;
         }
-        svg.fa-circle-up{
+
+        svg.fa-circle-up {
             fill: var(--bs-red) !important;
         }
+
         tbody tr td:nth-child(1),
         tbody tr td:nth-child(2),
         tbody tr td:nth-child(4),
         tbody tr td:nth-child(5),
-        tbody tr td:nth-child(6){
+        tbody tr td:nth-child(6) {
             color: #353A4D !important;
         }
     </style>
@@ -99,428 +104,51 @@
 
 <body>
     <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Global Rates Table</h2>
-    <table class="table " id="arranged-table" style="width:90%;margin: 20px auto 20px !important;border:1px solid #CCCCCC;">
+    <table class="table " id="arranged-table"
+        style="width:90%;margin: 20px auto 20px !important;border:1px solid #CCCCCC;">
         <thead>
             <tr style="color: #CCCCCC !important;">
                 <th class="">
-                    <div class="table-normal text-start"style="color: #CCCCCC !important;"></div>
+                    <div class="table-normal text-start" style="color: #CCCCCC !important;"></div>
                 </th>
                 <th class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Country/Region</div>
+                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Country/Region</div>
+                </th>
+                <th class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Currency</div>
                 </th>
                 <th class="">
-                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Current</div>
+                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Current</div>
                 </th>
                 <th class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Direction</div>
+                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Direction</div>
                 </th>
                 <th class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Previous</div>
+                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Previous</div>
                 </th>
                 <th class="d-none d-md-table-cell">
-                    <div class="table-normal text-end"style="color: #CCCCCC !important;">Change</div>
+                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Change</div>
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/1002/american-fed-federal-funds-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/1002/american-fed-federal-funds-rate/"
-                        title="American Central Bank" class="table-link">American Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">United States</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">07-26-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/1/australian-rba-official-cash-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/1/australian-rba-official-cash-rate/"
-                        title="Australian Central Bank" class="table-link">Australian Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Australia</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.10 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.85 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">06-06-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/2/brazilian-bacen-selic-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/2/brazilian-bacen-selic-rate/"
-                        title="Brazilian Central Bank" class="table-link">Brazilian Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Brazil</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">12.75 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-down"
-                            style="color: var(--bs-green);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M344 240h-56L287.1 152c0-13.25-10.75-24-24-24h-16C234.7 128 223.1 138.8 223.1 152L224 240h-56c-9.531 0-18.16 5.656-22 14.38C142.2 263.1 143.9 273.3 150.4 280.3l88.75 96C243.7 381.2 250.1 384 256.8 384c7.781-.3125 13.25-2.875 17.75-7.844l87.25-96c6.406-7.031 8.031-17.19 4.188-25.88S353.5 240 344 240zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">13.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-21-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/1003/british-boe-official-bank-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/1003/british-boe-official-bank-rate/"
-                        title="British Central Bank" class="table-link">British Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">United Kingdom</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.25 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">08-03-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/3/canadian-boc-policy-interest-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/3/canadian-boc-policy-interest-rate/"
-                        title="Canadian Central Bank" class="table-link">Canadian Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Canada</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">4.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">07-12-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/14/chilean-cboc-monetary-policy-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/14/chilean-cboc-monetary-policy-rate/"
-                        title="Chilean Central Bank" class="table-link">Chilean Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Chile</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">9.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-down"
-                            style="color: var(--bs-green);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M344 240h-56L287.1 152c0-13.25-10.75-24-24-24h-16C234.7 128 223.1 138.8 223.1 152L224 240h-56c-9.531 0-18.16 5.656-22 14.38C142.2 263.1 143.9 273.3 150.4 280.3l88.75 96C243.7 381.2 250.1 384 256.8 384c7.781-.3125 13.25-2.875 17.75-7.844l87.25-96c6.406-7.031 8.031-17.19 4.188-25.88S353.5 240 344 240zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">10.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-05-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/12/chinese-pbc-loan-prime-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/12/chinese-pbc-loan-prime-rate/"
-                        title="Chinese Central Bank" class="table-link">Chinese Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">China</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">3.45 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-down"
-                            style="color: var(--bs-green);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M344 240h-56L287.1 152c0-13.25-10.75-24-24-24h-16C234.7 128 223.1 138.8 223.1 152L224 240h-56c-9.531 0-18.16 5.656-22 14.38C142.2 263.1 143.9 273.3 150.4 280.3l88.75 96C243.7 381.2 250.1 384 256.8 384c7.781-.3125 13.25-2.875 17.75-7.844l87.25-96c6.406-7.031 8.031-17.19 4.188-25.88S353.5 240 344 240zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.55 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">08-21-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/19/czech-cnb-2-week-repo-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/19/czech-cnb-2-week-repo-rate/" title="Czech Central Bank"
-                        class="table-link">Czech Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Czech Republic</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">7.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">06-22-2022</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/8/danish-nationalbanken-lending-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/8/danish-nationalbanken-lending-rate/"
-                        title="Danish Central Bank" class="table-link">Danish Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Denmark</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">3.75 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.50 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-15-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/1001/european-ecb-refinancing-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/1001/european-ecb-refinancing-rate/"
-                        title="European Central Bank" class="table-link">European Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Europe</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">4.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-14-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/20/hungarian-mnb-base-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/20/hungarian-mnb-base-rate/"
-                        title="Hungarian Central Bank" class="table-link">Hungarian Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Hungary</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">13.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">11.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-27-2022</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/13/indian-rbi-policy-repo-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/13/indian-rbi-policy-repo-rate/"
-                        title="Indian Central Bank" class="table-link">Indian Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">India</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">6.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">6.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">02-08-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/18/israeli-key-interest-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/18/israeli-key-interest-rate/"
-                        title="Israeli Central Bank" class="table-link">Israeli Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Israel</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.75 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">4.50 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">05-22-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/9/japanese-boj-overnight-call-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/9/japanese-boj-overnight-call-rate/"
-                        title="Japanese Central Bank" class="table-link">Japanese Central Bank</a>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Japanese Central Bank</div>
                 </td>
                 <td class="d-none d-xl-table-cell">
                     <div class="table-normal text-end">Japan</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">JPY</div>
                 </td>
                 <td class="current-rating">
                     <div class="table-normal text-end">-0.10 %</div>
                 </td>
                 <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-down"
-                            style="color: var(--bs-green);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M344 240h-56L287.1 152c0-13.25-10.75-24-24-24h-16C234.7 128 223.1 138.8 223.1 152L224 240h-56c-9.531 0-18.16 5.656-22 14.38C142.2 263.1 143.9 273.3 150.4 280.3l88.75 96C243.7 381.2 250.1 384 256.8 384c7.781-.3125 13.25-2.875 17.75-7.844l87.25-96c6.406-7.031 8.031-17.19 4.188-25.88S353.5 240 344 240zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
+                    <div class="table-normal text-end">
+                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
+                    </div>
                 </td>
                 <td class="d-none d-lg-table-cell">
                     <div class="table-normal text-end">0.00 %</div>
@@ -529,288 +157,23 @@
                     <div class="table-normal text-end">02-01-2016</div>
                 </td>
             </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/10/mexican-banxico-overnight-target-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/10/mexican-banxico-overnight-target-rate/"
-                        title="Mexican Central Bank" class="table-link">Mexican Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Mexico</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">11.25 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">11.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">03-30-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/23/new-zealand-official-cash-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/23/new-zealand-official-cash-rate/"
-                        title="New Zealand Central Bank" class="table-link">New Zealand Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">New Zealand</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">05-24-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/24/norwegian-norges-bank-key-policy-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/24/norwegian-norges-bank-key-policy-rate/"
-                        title="Norwegian Central Bank" class="table-link">Norwegian Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Norway</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.25 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">4.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-21-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/21/polish-nbp-reference-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/21/polish-nbp-reference-rate/" title="Polish Central Bank"
-                        class="table-link">Polish Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Poland</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.75 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-down"
-                            style="color: var(--bs-green);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M344 240h-56L287.1 152c0-13.25-10.75-24-24-24h-16C234.7 128 223.1 138.8 223.1 152L224 240h-56c-9.531 0-18.16 5.656-22 14.38C142.2 263.1 143.9 273.3 150.4 280.3l88.75 96C243.7 381.2 250.1 384 256.8 384c7.781-.3125 13.25-2.875 17.75-7.844l87.25-96c6.406-7.031 8.031-17.19 4.188-25.88S353.5 240 344 240zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">6.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">10-04-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/4/russian-cbr-key-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/4/russian-cbr-key-rate/" title="Russian Central Bank"
-                        class="table-link">Russian Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Russia</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">13.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">12.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-18-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/25/saudi-arabian-sama-repo-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/25/saudi-arabian-sama-repo-rate/"
-                        title="Saudi Arabian Central Bank" class="table-link">Saudi Arabian Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Saudi Arabia</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">6.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">07-26-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/6/south-african-sarb-repo-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/6/south-african-sarb-repo-rate/"
-                        title="South African Central Bank" class="table-link">South African Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">South Africa</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">8.25 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">7.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">05-25-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/15/south-korean-bank-of-korea-base-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/15/south-korean-bank-of-korea-base-rate/"
-                        title="South Korean Central Bank" class="table-link">South Korean Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">South Korea</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">3.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">01-13-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/7/swedish-riksbank-policy-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/7/swedish-riksbank-policy-rate/"
-                        title="Swedish Central Bank" class="table-link">Swedish Central Bank</a>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Sweden</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-21-2023</div>
-                </td>
-            </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/11/swiss-snb-policy-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/11/swiss-snb-policy-rate/" title="Swiss Central Bank"
-                        class="table-link">Swiss Central Bank</a>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Swiss Central Bank</div>
                 </td>
                 <td class="d-none d-xl-table-cell">
                     <div class="table-normal text-end">Switzerland</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">CHF</div>
                 </td>
                 <td class="current-rating">
                     <div class="table-normal text-end">1.75 %</div>
                 </td>
                 <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
                 </td>
                 <td class="d-none d-lg-table-cell">
                     <div class="table-normal text-end">1.50 %</div>
@@ -819,27 +182,592 @@
                     <div class="table-normal text-end">06-22-2023</div>
                 </td>
             </tr>
-            <tr onclick="window.location.href='/en/interest-rates/central-banks/5/turkish-tcmb-repo-rate/';"
-                style="cursor:pointer;">
-                <td class="">
-                    <a href="/en/interest-rates/central-banks/5/turkish-tcmb-repo-rate/" title="Turkish Central Bank"
-                        class="table-link">Turkish Central Bank</a>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Chinese Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">China</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">CNY</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">3.45 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">3.55 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">08-21-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">South Korean Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">South Korea</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">KRW</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">3.50 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">3.25 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">01-13-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Danish Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Denmark</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">DKK</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">3.75 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">3.50 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">09-15-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Swedish Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Sweden</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">SEK</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">4.00 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">3.75 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">09-21-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Australian Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Australia</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">AUD</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">4.10 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">3.85 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">06-06-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Norwegian Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Norway</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">NOK</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">4.25 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">4.00 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">09-21-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">European Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Europe</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">EUR</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">4.50 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">4.25 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">09-14-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Israeli Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Israel</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">ILA</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">4.75 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">4.50 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">05-22-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Canadian Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Canada</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">CAD</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">5.00 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">4.75 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">07-12-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">British Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">United Kingdom</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">GBP</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">5.25 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">5.00 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">08-03-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">American Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">United States</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">USD</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">5.50 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">5.25 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">07-26-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">New Zealand Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">New Zealand</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">NZD</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">5.50 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">5.25 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">05-24-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Polish Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Poland</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">PLN</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">5.75 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">6.00 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">10-04-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Saudi Arabian Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Saudi Arabia</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">SAR</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">6.00 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">5.75 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">07-26-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Indian Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">India</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">INR</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">6.50 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">6.25 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">02-08-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Czech Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Czech Republic</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">CZK</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">7.00 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">5.75 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">06-22-2022</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">South African Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">South Africa</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">SAR</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">8.25 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">7.75 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">05-25-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Chilean Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Chile</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">CLP</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">9.50 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">10.25 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">09-05-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Mexican Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Mexico</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">MXN</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">11.25 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">11.00 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">03-30-2023</div>
+                </td>
+            </tr>
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Brazilian Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Brazil</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">BRL</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">12.75 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">13.25 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">09-21-2023</div>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Hungarian Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Hungary</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">HUF</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">13.00 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">11.75 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">09-27-2022</div>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Russian Central Bank</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Russia</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">Rub</div>
+                </td>
+                <td class="current-rating">
+                    <div class="table-normal text-end">13.00 %</div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
+                </td>
+                <td class="d-none d-lg-table-cell">
+                    <div class="table-normal text-end">12.00 %</div>
+                </td>
+                <td class="d-none d-md-table-cell">
+                    <div class="table-normal text-end">09-18-2023</div>
+                </td>
+            </tr>
+
+
+
+
+
+            <tr style="cursor:pointer;">
+                <td class="currency-link">
+                    <div class="table-link">Turkish Central Bank</div>
                 </td>
                 <td class="d-none d-xl-table-cell">
                     <div class="table-normal text-end">Türkiye</div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <div class="table-normal text-end">TRY</div>
                 </td>
                 <td class="current-rating">
                     <div class="table-normal text-end">30.00 %</div>
                 </td>
                 <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end"><svg class="svg-inline--fa fa-circle-up"
-                            style="color: var(--bs-red);" aria-hidden="true" focusable="false" data-prefix="far"
-                            data-icon="circle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z">
-                            </path>
-                        </svg></div>
+                    <div class="table-normal text-end">
+                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
+                    </div>
                 </td>
                 <td class="d-none d-lg-table-cell">
                     <div class="table-normal text-end">25.00 %</div>
@@ -884,42 +812,6 @@
         </div>
         <!-- myfxbook.com Economic Calendar Widget - End -->
     </div>
-
-    <script>
-        function sortTableByColumn(tableId, columnIndex) {
-          var table, rows, switching, i, x, y, shouldSwitch;
-          table = document.getElementById(tableId);
-          switching = true;
-      
-          while (switching) {
-            switching = false;
-            rows = table.rows;
-      
-            for (i = 1; i < rows.length - 1; i++) {
-              shouldSwitch = false;
-      
-              x = rows[i].getElementsByClassName("current-rating")[0].querySelector(".table-normal");
-              y = rows[i + 1].getElementsByClassName("current-rating")[0].querySelector(".table-normal");
-      
-              // Extract percentage values and convert them to numbers for comparison
-              var xValue = parseFloat(x.innerHTML.replace("%", ""));
-              var yValue = parseFloat(y.innerHTML.replace("%", ""));
-      
-              if (xValue > yValue) {
-                shouldSwitch = true;
-                break;
-              }
-            }
-      
-            if (shouldSwitch) {
-              rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-              switching = true;
-            }
-          }
-        }
-      
-        sortTableByColumn("arranged-table", 2);
-          </script>
 
 </body>
 
