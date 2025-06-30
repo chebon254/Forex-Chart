@@ -28,10 +28,10 @@
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <style>
-* {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-}
+        * {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
 
         table {
             font-family: 'Montserrat', sans-serif;
@@ -100,778 +100,141 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!-- == Icons == -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- == Icons == -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         crossorigin="anonymous" />
 </head>
 
 <body>
     <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Global Rates Table</h2>
-    <table class="table " id="arranged-table"
-        style="width:90%;margin: 20px auto 20px !important;border:1px solid #CCCCCC;">
+    <table style="margin: auto; width: 90%;">
         <thead>
-            <tr style="color: #CCCCCC !important;">
-                <th class="">
-                    <div class="table-normal text-start" style="color: #CCCCCC !important;"></div>
-                </th>
-                <th class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Country/Region</div>
-                </th>
-                <th class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Currency</div>
-                </th>
-                <th class="">
-                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Current</div>
-                </th>
-                <th class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Direction</div>
-                </th>
-                <th class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Previous</div>
-                </th>
-                <th class="d-none d-md-table-cell">
-                    <div class="table-normal text-end" style="color: #CCCCCC !important;">Change</div>
-                </th>
+            <tr>
+                <th>Central Bank</th>
+                <th>Country/Region</th>
+                <th>Current Rate</th>
+                <th>Previous Rate</th>
+                <th>Currency</th>
+                <th>Last Change Date</th>
             </tr>
         </thead>
         <tbody>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Japanese Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Japan</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">JPY</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">-0.10 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">0.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">02-01-2016</div>
-                </td>
+            <tr>
+                <td>American Central Bank</td>
+                <td>United States</td>
+                <td>4.50%</td>
+                <td>4.75%</td>
+                <td>USD</td>
+                <td>12-18-2024</td>
             </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Swiss Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Switzerland</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">CHF</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">1.75 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">1.50 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">06-22-2023</div>
-                </td>
+            <tr>
+                <td>British Central Bank</td>
+                <td>United Kingdom</td>
+                <td>4.25%</td>
+                <td>4.50%</td>
+                <td>GBP</td>
+                <td>05-08-2025</td>
             </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Chinese Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">China</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">CNY</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">3.45 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.55 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">08-21-2023</div>
-                </td>
+            <tr>
+                <td>Australian Central Bank</td>
+                <td>Australia</td>
+                <td>3.85%</td>
+                <td>4.10%</td>
+                <td>AUD</td>
+                <td>05-21-2025</td>
             </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">South Korean Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">South Korea</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">KRW</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">3.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">01-13-2023</div>
-                </td>
+            <tr>
+                <td>New Zealand Central Bank</td>
+                <td>New Zealand</td>
+                <td>3.25%</td>
+                <td>3.50%</td>
+                <td>NZD</td>
+                <td>05-28-2025</td>
             </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Danish Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Denmark</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">DKK</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">3.75 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.50 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-15-2023</div>
-                </td>
+            <tr>
+                <td>Canadian Central Bank</td>
+                <td>Canada</td>
+                <td>2.75%</td>
+                <td>3.00%</td>
+                <td>CAD</td>
+                <td>03-12-2025</td>
             </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Swedish Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Sweden</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">SEK</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-21-2023</div>
-                </td>
+            <tr>
+                <td>European Central Bank</td>
+                <td>Europe</td>
+                <td>2.15%</td>
+                <td>2.40%</td>
+                <td>EUR</td>
+                <td>06-05-2025</td>
             </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Australian Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Australia</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">AUD</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.10 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">3.85 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">06-06-2023</div>
-                </td>
+            <tr>
+                <td>Japanese Central Bank</td>
+                <td>Japan</td>
+                <td>0.50%</td>
+                <td>0.25%</td>
+                <td>JPY</td>
+                <td>01-24-2025</td>
             </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Norwegian Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Norway</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">NOK</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.25 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">4.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-21-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">European Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Europe</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">EUR</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">4.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-14-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Israeli Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Israel</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">ILA</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">4.75 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">4.50 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">05-22-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Canadian Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Canada</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">CAD</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">4.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">07-12-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">British Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">United Kingdom</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">GBP</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.25 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">08-03-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">American Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">United States</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">USD</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">07-26-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">New Zealand Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">New Zealand</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">NZD</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">05-24-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Polish Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Poland</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">PLN</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">5.75 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">6.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">10-04-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Saudi Arabian Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Saudi Arabia</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">SAR</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">6.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">07-26-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Indian Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">India</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">INR</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">6.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">6.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">02-08-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Czech Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Czech Republic</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">CZK</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">7.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">5.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">06-22-2022</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">South African Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">South Africa</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">SAR</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">8.25 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">7.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">05-25-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Chilean Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Chile</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">CLP</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">9.50 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">10.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-05-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Mexican Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Mexico</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">MXN</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">11.25 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">11.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">03-30-2023</div>
-                </td>
-            </tr>
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Brazilian Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Brazil</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">BRL</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">12.75 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/down.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">13.25 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-21-2023</div>
-                </td>
-            </tr>
-
-
-
-
-
-
-
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Hungarian Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Hungary</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">HUF</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">13.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">11.75 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-27-2022</div>
-                </td>
-            </tr>
-
-
-
-
-
-
-
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Russian Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Russia</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Rub</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">13.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">12.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-18-2023</div>
-                </td>
-            </tr>
-
-
-
-
-
-            <tr style="cursor:pointer;">
-                <td class="currency-link">
-                    <div class="table-link">Turkish Central Bank</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">Türkiye</div>
-                </td>
-                <td class="d-none d-xl-table-cell">
-                    <div class="table-normal text-end">TRY</div>
-                </td>
-                <td class="current-rating">
-                    <div class="table-normal text-end">30.00 %</div>
-                </td>
-                <td class="d-none d-xxl-table-cell">
-                    <div class="table-normal text-end">
-                        <img src="css/pics/up.svg" alt="" width="20px" height="20px">
-                    </div>
-                </td>
-                <td class="d-none d-lg-table-cell">
-                    <div class="table-normal text-end">25.00 %</div>
-                </td>
-                <td class="d-none d-md-table-cell">
-                    <div class="table-normal text-end">09-22-2023</div>
-                </td>
+            <tr>
+                <td>Swiss Central Bank</td>
+                <td>Switzerland</td>
+                <td>0.00%</td>
+                <td>0.25%</td>
+                <td>CHF</td>
+                <td>06-19-2025</td>
             </tr>
         </tbody>
     </table>
-    <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Forex Explained</h2>
-    <ul style="width: 90%; margin: 0px auto 20px; text-align: left; list-style: decimal;">
-        <li>Forex is not Foreign Exchange of currencies.</li>
-        <li>Forex is speculation between you and the broker.</li>
-            <ul>
-                <li>You loose = broker gains.</li>
-                <li>You win   = broker looses.</li>
-                <p>Broker are very rich! 99% trader do not make money.</p>
-            </ul>
-        <li>Forex is hard and it is meant to be hard(nothing is easy).</li>
-        <li>You won't become rich but can make some cash.</li>
-    </ul>
-    <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Rules To Be Followed</h2>
-    <ul style="width: 90%; margin: 0px auto 20px; text-align: left; list-style: decimal;">
-        <li>Trade on High effect news events only(Discipline)</li>
-        <li>Do not Trade when there are many high effect events for a single currency.</li>
-        <li>Couple two strong and weak interest rate currency before news.</li>
-        <li>Analyze the news understand its effect whether to buy or sell.</li>
-        <li>More leverage less risk</li>
-    </ul>
-    <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Tools</h2>
-    <h3 style="width: 90%; margin: 20px auto 10px; text-align: left;">News Tools</h3>
-    <ul style="width: 90%; margin: 0px auto 20px; text-align: left; list-style: decimal;">
-        <li>MyFxbook - Economic Calender <br><br> <a target="_blank" href="https://www.myfxbook.com" style="border-radius: 4px; background-color: #353A4D !important; color: #ddd !important; padding: 10px 20px;"><i class="fa-regular fa-circle-right"></i> Click To Use</a></li>
-        <br>
-        <li>Global Rates - Central Banks <br><br> <a target="_blank" href="global-rates.com/en/interest-rates/central-banks/central-banks.aspx" style="border-radius: 4px; background-color: #353A4D !important; color: #ddd !important; padding: 10px 20px;"><i class="fa-regular fa-circle-right"></i> Click To Use</a></li>
-        <br>
-        <li>MQL5 - Economic Calender <br><br> <a target="_blank" href="https://www.mql5.com/en/economic-calendar" style="border-radius: 4px; background-color: #353A4D !important; color: #ddd !important; padding: 10px 20px;"><i class="fa-regular fa-circle-right"></i> Click To Use</a></li>
-    </ul>
-    <h3 style="width: 90%; margin: 20px auto 10px; text-align: left;">Best Trade Tools</h3>
-    <p style="width: 90%; margin: 20px auto 10px; text-align: left;">They have the best user interface with many custom features e.g News Calender, Themes</p>
-    <ul style="width: 90%; margin: 0px auto 20px; text-align: left; list-style: decimal;">
-        <li>Quotex - Binary  <br><br> <a target="_blank" href="https://broker-qx.pro/?lid=498003" style="border-radius: 4px; background-color: #353A4D !important; color: #ddd !important; padding: 10px 20px;"><i class="fa-regular fa-circle-right"></i> Click To Join</a></li>
-        <br>
-        <li>FBS - Speculator <br><br> <a target="_blank" href="https://fbs.partners?ibl=810492&ibp=31173240" style="border-radius: 4px; background-color: #353A4D !important; color: #ddd !important; padding: 10px 20px;"><i class="fa-regular fa-circle-right"></i> Click To Join</a></li>
-    </ul>
     <br>
     <br>
     <br>
-    <br>
-    <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Economic Calendar</h2>
-    <!-- <div style="width: 90%; margin: 20px auto 10px;">
-        <iframe
-            src="https://widget.myfxbook.com/widget/calendar.html?lang=en&impacts=0,1,2,3&symbols=AUD,CAD,CHF,CNY,EUR,GBP,JPY,NZD,USD"
-            style="border: 0; width: 100%; height:100vh;"></iframe>
-        <div style="margin-top: 10px;">
-            <div
-                style="width: fit-content; margin: auto;font-family: roboto,sans-serif!important; font-size: 13px; color: #666666;">
-                <a href="https://www.myfxbook.com/forex-economic-calendar?utm_source=widget13&utm_medium=link&utm_campaign=copyright"
-                    title="Economic Calendar" class="myfxbookLink" target="_blank" rel="noopener"><b
-                        style="color:#666666">Economic Calendar</b></a>
-                by Myfxbook.com
-            </div>
-        </div>
-    </div> -->
-    <style>
-        #calendarDesktop{
-            position: relative;
-        }
-        #calendarDesktop thead tr{
-            position: static !important;
-            top: 0px;
-        }
-    </style>
-
-    <div style="width: 90%; margin: 20px auto 10px;">
-        <!-- myfxbook.com Economic Calendar Widget - Start -->
-            <iframe src="https://widget.myfxbook.com/widget/calendar.html?lang=en&impacts=2,3&symbols=AED,AFN,ALL,AMD,ANG,AOA,ARS,AUD,AWG,AZN,BAM,BBD,BDT,BGN,BHD,BIF,BMD,BND,BOB,BRL,BSD,BTN,BWP,BYN,BZD,CAD,CDF,CHF,CLP,CNY,COP,CRC,CUC,CVE,CZK,DJF,DKK,DOP,DZD,EGP,ERN,ETB,EUR,FJD,FKP,GBP,GEL,GHS,GIP,GMD,GNF,GTQ,GYD,HKD,HNL,HRK,HTG,HUF,IDR,ILS,INR,IQD,IRR,ISK,JMD,JOD,JPY,KES,KGS,KHR,KMF,KPW,KRW,KWD,KYD,KZT,LAK,LBP,LKR,LRD,LSL,LYD,MAD,MDL,MGA,MKD,MMK,MNT,MOP,MRO,MUR,MVR,MWK,MXN,MYR,MZN,NAD,NGN,NIO,NOK,NPR,NZD,OMR,PAB,PEN,PGK,PHP,PKR,PLN,PYG,QAR,RON,RSD,RUB,RWF,SAR,SBD,SCR,SDG,SEK,SGD,SHP,SLL,SOS,SRD,SSP,STD,SYP,SZL,THB,TJS,TMT,TND,TOP,TRY,TTD,TWD,TZS,UAH,UGX,USD,UYU,UZS,VEF,VND,VUV,WST,XAF,XCD,XOF,XPF,YER,ZAR,ZMW" style="border: 0; width:100%; height:80vh;"></iframe>
-            
-            <div style="margin-top: 10px;">
-                <div style="width: fit-content; margin: auto;font-family: roboto,sans-serif!important; font-size: 13px; color: #666666;">
-                    <a href="https://www.myfxbook.com/forex-economic-calendar?utm_source=widget13&utm_medium=link&utm_campaign=copyright" title="Economic Calendar" class="myfxbookLink" target="_blank" rel="noopener"><b style="color:#666666">Economic Calendar</b></a>
-                    by Myfxbook.com
-                </div>
-            </div>
-        <!-- myfxbook.com Economic Calendar Widget - End -->
+    <div style="">
+        <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Interest Differential</h2>
+        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">Interest Differencial is difference between two
+            interest
+            rates eg <strong>USD4.5% - AUD3.5% = 1%</strong> Differencial. Couple two currencies with different interest
+            rate. It is always positive for the one with high rate. </p>
+        <img src="css/pics/diff.png" alt=""
+            style="width: 90%; margin: auto !important; text-align: center; display: block;">
+        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">
+            The above image shows the central banks/commitment of traders/commercials the red line. Here is how to
+            understand it. <strong>NB:</strong> Just because it is above zero basis line does not mean
+            it is a buy or below zero basis line means it will go down/sell.
+        </p>
+        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">
+            <strong>What we are looking for:</strong>
+        </p>
+        <ul style="width: 90%; margin: 20px auto 10px; text-align: left;">
+            <li>Highest Interest Differencial btw currencies example United States and Switzerland with 4.50%
+                Differencial. <br> <strong>Example:</strong> 4.50% - 0.00% = 4.50%</li>
+            <li>Net long/Above zero basis line by commercials or Net short/below zero basis line by commercials for
+                individual coupled currencies.</li>
+            <li>To come up with quantitative analysis or buy/sell program check that coupled currencies have opposites
+                side from zero basis line.
+                <br><br> <strong>Conclusion:</strong> USD is bulish if USD is above zero basis line and CHF is below
+                <br> zero basis line because USD has a higher interest rate against a weak CHF interest rate
+            </li>
+            <li>Then analyse the individual chart to find market structure break.
+                <br>
+            </li>
+        </ul>
+        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">
+            Basically below zero basis line means commercials are saying the currency is overbought and price is likely
+            to go down overtime.
+            Basically above zero basis line means commercials are saying the currency is oversold and price is likely to
+            go up overtime.
+        </p>
     </div>
+    <br>
+    <br>
     <br>
     <div style="width: 90%; margin: 20px auto 10px;">
         <div id="economicCalendarWidget"></div>
-        <script async type="text/javascript" data-type="calendar-widget" src="https://www.tradays.com/c/js/widgets/calendar/widget.js?v=13">
-            {
-                "width":"100%",
-                "height":"700",
-                "mode":"2",
-                "theme":1
-            }
-        </script>
     </div>
+    <script src="script.js"></script>
 
 
 </body>
