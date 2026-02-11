@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- == META OG Social Media Ads == -->
     <meta property="og:title" content="Chebon Kibet" />
     <meta property="og:url" content="https://forexchart-kibet.web.app" />
@@ -17,7 +19,7 @@
     <meta name="twitter:player" content="https://forexchart-kibet.web.app">
     <meta name="twitter:player:width" content="280">
     <meta name="twitter:player:height" content="150">
-    <title>Forex Chart</title>
+    <title>Forex Chart | Global Interest Rates</title>
     <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -26,47 +28,134 @@
     <link rel="shortcut icon" href="favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#1e293b">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+
     <style>
         * {
-            text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
-        table {
-            font-family: 'Montserrat', sans-serif;
-            border-collapse: collapse;
-            width: 50%;
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
 
-        table td,
-        table th {
-            border: 1px solid #dddddd;
-            padding: 8px;
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        table tr:nth-child(even) {
-            background-color: #f2f2f2;
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
 
-        table tr:hover {
-            background-color: #ddd;
+        .rate-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 0.875rem;
         }
 
-        table th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #353A4D;
+        .rate-high {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
         }
 
-        table th a {
-            color: #f2f2f2 !important;
+        .rate-medium {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
         }
 
-        li {
-            margin: 4px 0px;
+        .rate-low {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            color: white;
+        }
+
+        /* Custom DataTables Styling */
+        .dataTables_wrapper {
+            padding: 1.5rem;
+        }
+
+        .dataTables_filter input {
+            border: 2px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            margin-left: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .dataTables_filter input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        table.dataTable thead th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            color: white !important;
+            font-weight: 600;
+            padding: 1rem !important;
+            border: none !important;
+        }
+
+        table.dataTable tbody tr {
+            transition: all 0.3s;
+        }
+
+        table.dataTable tbody tr:hover {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
+            transform: scale(1.01);
+        }
+
+        table.dataTable tbody td {
+            padding: 1rem !important;
+            vertical-align: middle;
+        }
+
+        .dataTables_info, .dataTables_paginate {
+            margin-top: 1rem;
+        }
+
+        .paginate_button {
+            border-radius: 0.5rem !important;
+            padding: 0.5rem 1rem !important;
+            margin: 0 0.25rem !important;
+            transition: all 0.3s !important;
+        }
+
+        .paginate_button.current {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            color: white !important;
+            border: none !important;
         }
 
         svg {
@@ -75,8 +164,8 @@
         }
 
         :root {
-            --bs-red: #a5092e !important;
-            --bs-green: #059d10 !important;
+            --bs-red: #f5576c !important;
+            --bs-green: #43e97b !important;
         }
 
         svg.fa-circle-down {
@@ -87,179 +176,306 @@
             fill: var(--bs-red) !important;
         }
 
-        tbody tr td:nth-child(1),
-        tbody tr td:nth-child(2),
-        tbody tr td:nth-child(4),
-        tbody tr td:nth-child(5),
-        tbody tr td:nth-child(6) {
-            color: #353A4D !important;
+        .stats-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- == Icons == -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        crossorigin="anonymous" />
 </head>
 
-<body>
-    <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Global Rates Table</h2>
-    <table style="margin: auto; width: 90%;">
-        <thead>
-            <tr>
-                <th>Central Bank</th>
-                <th>Country/Region</th>
-                <th>Current Rate</th>
-                <th>Previous Rate</th>
-                <th>Currency</th>
-                <th>Last Change Date</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>American Central Bank</td>
-                <td>United States</td>
-                <td>4.50%</td>
-                <td>4.75%</td>
-                <td>USD</td>
-                <td>12-18-2024</td>
-            </tr>
-            <tr>
-                <td>British Central Bank</td>
-                <td>United Kingdom</td>
-                <td>4.25%</td>
-                <td>4.50%</td>
-                <td>GBP</td>
-                <td>05-08-2025</td>
-            </tr>
-            <tr>
-                <td>Australian Central Bank</td>
-                <td>Australia</td>
-                <td>3.85%</td>
-                <td>4.10%</td>
-                <td>AUD</td>
-                <td>05-21-2025</td>
-            </tr>
-            <tr>
-                <td>New Zealand Central Bank</td>
-                <td>New Zealand</td>
-                <td>3.25%</td>
-                <td>3.50%</td>
-                <td>NZD</td>
-                <td>05-28-2025</td>
-            </tr>
-            <tr>
-                <td>Canadian Central Bank</td>
-                <td>Canada</td>
-                <td>2.75%</td>
-                <td>3.00%</td>
-                <td>CAD</td>
-                <td>03-12-2025</td>
-            </tr>
-            <tr>
-                <td>European Central Bank</td>
-                <td>Europe</td>
-                <td>2.15%</td>
-                <td>2.40%</td>
-                <td>EUR</td>
-                <td>06-05-2025</td>
-            </tr>
-            <tr>
-                <td>Japanese Central Bank</td>
-                <td>Japan</td>
-                <td>0.50%</td>
-                <td>0.25%</td>
-                <td>JPY</td>
-                <td>01-24-2025</td>
-            </tr>
-            <tr>
-                <td>Swiss Central Bank</td>
-                <td>Switzerland</td>
-                <td>0.00%</td>
-                <td>0.25%</td>
-                <td>CHF</td>
-                <td>06-19-2025</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <br>
-    <div style="">
-        <h2 style="width: 90%; margin: 20px auto 10px; text-align: left;">Interest Differential</h2>
-        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">Interest Differencial is difference between two
-            interest
-            rates eg <strong>USD4.5% - AUD3.5% = 1%</strong> Differencial. Couple two currencies with different interest
-            rate. It is always positive for the one with high rate. </p>
-        <img src="css/pics/diff.png" alt=""
-            style="width: 90%; margin: auto !important; text-align: center; display: block;">
-        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">
-            The above image shows the central banks/commitment of traders/commercials the red line. Here is how to
-            understand it. <strong>NB:</strong> Just because it is above zero basis line does not mean
-            it is a buy or below zero basis line means it will go down/sell.
-        </p>
+<body class="min-h-screen">
+    <!-- Hero Section -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center mb-8" data-aos="fade-down">
+            <h1 class="text-5xl font-bold text-white mb-4">
+                <i class="fas fa-chart-line mr-3"></i>Global Interest Rates
+            </h1>
+            <p class="text-white text-lg opacity-90">Real-time central bank interest rates from around the world</p>
+            <div class="mt-4 text-white text-sm opacity-75">
+                <i class="fas fa-sync-alt mr-2"></i>Last Updated: February 12, 2026
+            </div>
+        </div>
 
-        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">
-            <strong>What we are looking for:</strong>
-        </p>
-        <img src="css/pics/new insight.png" alt=""
-            style="width: 90%; margin: auto !important; text-align: center; display: block;">
-        <img src="css/pics/new insight 2.png" alt=""
-            style="width: 90%; margin: auto !important; text-align: center; display: block;">
-        
-        <ul style="width: 90%; margin: 20px auto 10px; text-align: left;">
-            <li>Highest Interest Differencial btw currencies example United States and Switzerland with 4.50%
-                Differencial. <br> <strong>Example:</strong> 4.50% - 0.00% = 4.50%</li>
-            <li>Net long/Above zero basis line by commercials or Net short/below zero basis line by commercials for
-                individual coupled currencies.</li>
-            <li>To come up with quantitative analysis or buy/sell program check that coupled currencies have opposites
-                side from zero basis line.
-                <br><br> <strong>Conclusion:</strong> USD is bulish if USD is above zero basis line and CHF is below
-                <br> zero basis line because USD has a higher interest rate against a weak CHF interest rate
-            </li>
-            <li>Then analyse the individual chart to find market structure break.
-                <br>
-            </li>
-        </ul>
-        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">
-            Basically below zero basis line means commercials are saying the currency is overbought and price is likely
-            to go down overtime.
-            Basically above zero basis line means commercials are saying the currency is oversold and price is likely to
-            go up overtime.
-        </p>
-        <br>
-        <br>
-        <br>
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8" data-aos="fade-up">
+            <div class="stats-card">
+                <div class="text-gray-600 text-sm font-medium mb-2">Highest Rate</div>
+                <div class="text-3xl font-bold gradient-text">3.85%</div>
+                <div class="text-xs text-gray-500 mt-1">Australia (RBA)</div>
+            </div>
+            <div class="stats-card">
+                <div class="text-gray-600 text-sm font-medium mb-2">Lowest Rate</div>
+                <div class="text-3xl font-bold gradient-text">0.00%</div>
+                <div class="text-xs text-gray-500 mt-1">Switzerland (SNB)</div>
+            </div>
+            <div class="stats-card">
+                <div class="text-gray-600 text-sm font-medium mb-2">Total Banks</div>
+                <div class="text-3xl font-bold gradient-text">8</div>
+                <div class="text-xs text-gray-500 mt-1">Central Banks Tracked</div>
+            </div>
+            <div class="stats-card">
+                <div class="text-gray-600 text-sm font-medium mb-2">Average Rate</div>
+                <div class="text-3xl font-bold gradient-text">2.34%</div>
+                <div class="text-xs text-gray-500 mt-1">Global Average</div>
+            </div>
+        </div>
 
-        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">
-            On interest chart you will see small upward movements on a single currency bearish trend, that is to show that smart money is hedging,
-            Basically taking profits from their short sells previously. And vise verse
-        </p>
-        <img src="css/pics/gh.png" alt=""
-            style="width: 90%; margin: auto !important; text-align: center; display: block;">
-        <br>
-        <br>
+        <!-- Main Table -->
+        <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+            <table id="interest-rates-table" class="interest-rates display responsive nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-university mr-2"></i>Central Bank</th>
+                        <th><i class="fas fa-globe mr-2"></i>Country/Region</th>
+                        <th><i class="fas fa-percentage mr-2"></i>Current Rate</th>
+                        <th><i class="fas fa-calendar-alt mr-2"></i>Last Change</th>
+                        <th><i class="fas fa-money-bill-wave mr-2"></i>Currency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>American Fed</td>
+                        <td>United States</td>
+                        <td><span class="rate-badge rate-medium">3.75%</span></td>
+                        <td>12-11-2025</td>
+                        <td><span class="font-semibold">USD</span></td>
+                    </tr>
+                    <tr>
+                        <td>BOE</td>
+                        <td>United Kingdom</td>
+                        <td><span class="rate-badge rate-medium">3.75%</span></td>
+                        <td>12-18-2025</td>
+                        <td><span class="font-semibold">GBP</span></td>
+                    </tr>
+                    <tr>
+                        <td>RBA</td>
+                        <td>Australia</td>
+                        <td><span class="rate-badge rate-medium">3.85%</span></td>
+                        <td>02-03-2026</td>
+                        <td><span class="font-semibold">AUD</span></td>
+                    </tr>
+                    <tr>
+                        <td>RBNZ</td>
+                        <td>New Zealand</td>
+                        <td><span class="rate-badge rate-low">2.25%</span></td>
+                        <td>11-26-2025</td>
+                        <td><span class="font-semibold">NZD</span></td>
+                    </tr>
+                    <tr>
+                        <td>BOC</td>
+                        <td>Canada</td>
+                        <td><span class="rate-badge rate-low">2.25%</span></td>
+                        <td>10-29-2025</td>
+                        <td><span class="font-semibold">CAD</span></td>
+                    </tr>
+                    <tr>
+                        <td>ECB</td>
+                        <td>Europe</td>
+                        <td><span class="rate-badge rate-low">2.15%</span></td>
+                        <td>06-05-2025</td>
+                        <td><span class="font-semibold">EUR</span></td>
+                    </tr>
+                    <tr>
+                        <td>BOJ</td>
+                        <td>Japan</td>
+                        <td><span class="rate-badge rate-low">0.75%</span></td>
+                        <td>12-19-2025</td>
+                        <td><span class="font-semibold">JPY</span></td>
+                    </tr>
+                    <tr>
+                        <td>SNB</td>
+                        <td>Switzerland</td>
+                        <td><span class="rate-badge rate-low">0.00%</span></td>
+                        <td>06-19-2025</td>
+                        <td><span class="font-semibold">CHF</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <!-- Interest Differential Section -->
+        <div class="mt-12 glass-card p-8" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="text-4xl font-bold gradient-text mb-6">
+                <i class="fas fa-calculator mr-3"></i>Interest Differential
+            </h2>
 
-        <p style="width: 90%; margin: 20px auto 10px; text-align: left;">
-            <strong>Note:</strong> The interest rate is not the only factor that determines the price of a currency.
-            Other factors such as economic data, geopolitical events, and market sentiment also play a significant role.
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl mb-6">
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Interest Differential is the difference between two interest rates. For example:
+                    <span class="font-bold text-purple-600">USD 3.75% - CHF 0.00% = 3.75%</span> Differential.
+                    Couple two currencies with different interest rates. It is always positive for the one with the higher rate.
+                </p>
+            </div>
+
+            <div class="my-8 overflow-hidden rounded-xl shadow-lg">
+                <img src="css/pics/diff.png" alt="Interest Differential Chart" class="w-full">
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl mb-6">
+                <p class="text-gray-700">
+                    The above image shows the central banks/commitment of traders/commercials (the red line).
+                    <strong class="text-yellow-800">NB:</strong> Just because it is above zero basis line does not mean
+                    it is a buy, or below zero basis line means it will go down/sell.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                <i class="fas fa-search mr-2 text-purple-600"></i>What we are looking for:
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <img src="css/pics/new insight.png" alt="Trading Insight 1" class="w-full">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <img src="css/pics/new insight 2.png" alt="Trading Insight 2" class="w-full">
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex items-start bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-check-circle text-green-500 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <p class="text-gray-700">
+                            Highest Interest Differential between currencies. Example: United States and Switzerland with 3.75% Differential.
+                            <br><strong class="text-purple-600">Example:</strong> USD 3.75% - CHF 0.00% = 3.75%
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-check-circle text-green-500 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <p class="text-gray-700">
+                            Net long/Above zero basis line by commercials or Net short/below zero basis line by commercials
+                            for individual coupled currencies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-check-circle text-green-500 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <p class="text-gray-700">
+                            To come up with quantitative analysis or buy/sell program, check that coupled currencies have
+                            opposite sides from zero basis line.
+                            <br><br><strong class="text-green-600">Conclusion:</strong> USD is bullish if USD is above zero
+                            basis line and CHF is below zero basis line because USD has a higher interest rate against a weak
+                            CHF interest rate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-check-circle text-green-500 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <p class="text-gray-700">
+                            Then analyze the individual chart to find market structure break.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border-2 border-red-200">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-arrow-down text-red-600 text-2xl mr-3"></i>
+                        <h4 class="text-xl font-bold text-red-800">Below Zero Basis Line</h4>
+                    </div>
+                    <p class="text-gray-700">
+                        Commercials are saying the currency is <strong>overbought</strong> and price is likely to go down over time.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-2 border-green-200">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-arrow-up text-green-600 text-2xl mr-3"></i>
+                        <h4 class="text-xl font-bold text-green-800">Above Zero Basis Line</h4>
+                    </div>
+                    <p class="text-gray-700">
+                        Commercials are saying the currency is <strong>oversold</strong> and price is likely to go up over time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-xl">
+                <p class="text-gray-700">
+                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                    On interest charts, you will see small upward movements on a single currency bearish trend. That shows that
+                    smart money is hedging, basically taking profits from their short sells previously. And vice versa.
+                </p>
+            </div>
+
+            <div class="my-8 overflow-hidden rounded-xl shadow-lg">
+                <img src="css/pics/gh.png" alt="Hedging Example" class="w-full">
+            </div>
+
+            <div class="bg-orange-50 border-l-4 border-orange-400 p-6 rounded-r-xl">
+                <p class="text-gray-700">
+                    <i class="fas fa-exclamation-triangle text-orange-500 mr-2"></i>
+                    <strong>Note:</strong> The interest rate is not the only factor that determines the price of a currency.
+                    Other factors such as economic data, geopolitical events, and market sentiment also play a significant role.
+                </p>
+            </div>
+        </div>
+
+        <!-- Economic Calendar Widget -->
+        <div class="mt-12 glass-card p-8" data-aos="fade-up" data-aos-delay="600">
+            <h2 class="text-3xl font-bold gradient-text mb-6">
+                <i class="fas fa-calendar-day mr-3"></i>Economic Calendar
+            </h2>
+            <div id="economicCalendarWidget"></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-white mt-12 pb-8 opacity-75">
+            <p>Data sourced from <a href="https://www.global-rates.com/en/interest-rates/central-banks/" target="_blank" class="underline hover:opacity-100">Global-Rates.com</a></p>
+            <p class="mt-2">© 2026 Forex Chart Analysis</p>
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <div style="width: 90%; margin: 20px auto 10px;">
-        <div id="economicCalendarWidget"></div>
-    </div>
+
+    <!-- Scripts -->
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+        $(document).ready(function() {
+            // Initialize DataTables
+            $('#interest-rates-table').DataTable({
+                responsive: true,
+                paging: false, // Disable pagination since we only have 8 rows
+                order: [[2, 'desc']], // Sort by Current Rate descending
+                language: {
+                    search: "Search Banks:",
+                    info: "Showing _START_ to _END_ of _TOTAL_ central banks",
+                    infoEmpty: "No banks available",
+                    infoFiltered: "(filtered from _MAX_ total banks)"
+                }
+            });
+
+            // Initialize AOS
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+        });
+    </script>
+
     <script src="script.js"></script>
-
-
 </body>
 
 </html>
