@@ -57,47 +57,68 @@
         }
 
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(1100px 550px at 50% -8%, rgba(99, 102, 241, 0.14), transparent 60%),
+                radial-gradient(800px 500px at 100% 0%, rgba(139, 92, 246, 0.10), transparent 60%);
+            background-repeat: no-repeat;
             min-height: 100vh;
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+        .card {
+            background: #ffffff;
+            border-radius: 1.25rem;
+            border: 1px solid #eef0f6;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.05);
+        }
+
+        .icon-badge {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
         }
 
         .rate-badge {
             display: inline-flex;
             align-items: center;
-            padding: 0.5rem 1rem;
+            padding: 0.375rem 0.875rem;
             border-radius: 9999px;
             font-weight: 600;
-            font-size: 0.875rem;
+            font-size: 0.8125rem;
         }
 
         .rate-high {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
+            background: #fef2f2;
+            color: #dc2626;
         }
 
         .rate-medium {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            color: white;
+            background: #fffbeb;
+            color: #d97706;
         }
 
         .rate-low {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-            color: white;
+            background: #ecfdf5;
+            color: #059669;
+        }
+
+        .trend-up {
+            color: #10b981;
+        }
+
+        .trend-down {
+            color: #ef4444;
         }
 
         /* Custom DataTables Styling */
@@ -106,43 +127,45 @@
         }
 
         .dataTables_filter input {
-            border: 2px solid #e2e8f0;
-            border-radius: 0.5rem;
-            padding: 0.5rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.625rem;
+            padding: 0.5rem 0.875rem;
             margin-left: 0.5rem;
-            transition: all 0.3s;
+            font-size: 0.875rem;
+            transition: all 0.2s;
         }
 
         .dataTables_filter input:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #a5b4fc;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
         }
 
         table.dataTable thead th {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-            color: white !important;
+            background: #f8fafc !important;
+            color: #475569 !important;
             font-weight: 600;
             padding: 1rem !important;
-            border: none !important;
+            border-bottom: 1px solid #e2e8f0 !important;
         }
 
         table.dataTable tbody tr {
-            transition: all 0.3s;
+            transition: background 0.15s;
         }
 
         table.dataTable tbody tr:hover {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
-            transform: scale(1.01);
+            background: #f8fafc !important;
         }
 
         table.dataTable tbody td {
             padding: 1rem !important;
             vertical-align: middle;
+            border-top: 1px solid #f1f5f9 !important;
         }
 
         .dataTables_info, .dataTables_paginate {
             margin-top: 1rem;
+            color: #64748b;
         }
 
         .paginate_button {
@@ -153,40 +176,23 @@
         }
 
         .paginate_button.current {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            background: #6366f1 !important;
             color: white !important;
             border: none !important;
         }
 
-        svg {
-            height: 20px !important;
-            width: 20px !important;
-        }
-
-        :root {
-            --bs-red: #f5576c !important;
-            --bs-green: #43e97b !important;
-        }
-
-        svg.fa-circle-down {
-            color: var(--bs-green) !important;
-        }
-
-        svg.fa-circle-up {
-            fill: var(--bs-red) !important;
-        }
-
         .stats-card {
             background: white;
-            border-radius: 1rem;
+            border-radius: 1.25rem;
             padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #f1f5f9;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+            transition: transform 0.25s, box-shadow 0.25s;
         }
 
         .stats-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
         }
     </style>
 </head>
@@ -194,42 +200,53 @@
 <body class="min-h-screen">
     <!-- Hero Section -->
     <div class="container mx-auto px-4 py-8">
-        <div class="text-center mb-8" data-aos="fade-down">
-            <h1 class="text-5xl font-bold text-white mb-4">
-                <i class="fas fa-chart-line mr-3"></i>Global Interest Rates
+        <div class="text-center mb-10" data-aos="fade-down">
+            <div class="inline-flex items-center gap-2 bg-white border border-indigo-100 shadow-sm rounded-full px-4 py-1.5 mb-6 text-xs font-semibold text-indigo-600">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                </span>
+                Live Central Bank Data
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
+                Global <span class="gradient-text">Interest Rates</span>
             </h1>
-            <p class="text-white text-lg opacity-90">Real-time central bank interest rates from around the world</p>
-            <div class="mt-4 text-white text-sm opacity-75">
-                <i class="fas fa-sync-alt mr-2"></i>Last Updated: February 12, 2026
+            <p class="text-slate-500 text-lg max-w-xl mx-auto">Real-time central bank interest rates from around the world</p>
+            <div class="mt-4 inline-flex items-center gap-2 text-slate-400 text-sm">
+                <i class="fas fa-sync-alt"></i>Last Updated: September 22, 2026
             </div>
         </div>
 
         <!-- Stats Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8" data-aos="fade-up">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10" data-aos="fade-up">
             <div class="stats-card">
-                <div class="text-gray-600 text-sm font-medium mb-2">Highest Rate</div>
-                <div class="text-3xl font-bold gradient-text">3.85%</div>
-                <div class="text-xs text-gray-500 mt-1">Australia (RBA)</div>
+                <div class="icon-badge bg-rose-50 text-rose-500 mb-4"><i class="fas fa-arrow-trend-up"></i></div>
+                <div class="text-slate-500 text-sm font-medium mb-1">Highest Rate</div>
+                <div class="text-3xl font-bold gradient-text">4.35%</div>
+                <div class="text-xs text-slate-400 mt-1">Australia (RBA)</div>
             </div>
             <div class="stats-card">
-                <div class="text-gray-600 text-sm font-medium mb-2">Lowest Rate</div>
+                <div class="icon-badge bg-emerald-50 text-emerald-500 mb-4"><i class="fas fa-arrow-trend-down"></i></div>
+                <div class="text-slate-500 text-sm font-medium mb-1">Lowest Rate</div>
                 <div class="text-3xl font-bold gradient-text">0.00%</div>
-                <div class="text-xs text-gray-500 mt-1">Switzerland (SNB)</div>
+                <div class="text-xs text-slate-400 mt-1">Switzerland (SNB)</div>
             </div>
             <div class="stats-card">
-                <div class="text-gray-600 text-sm font-medium mb-2">Total Banks</div>
+                <div class="icon-badge bg-indigo-50 text-indigo-500 mb-4"><i class="fas fa-university"></i></div>
+                <div class="text-slate-500 text-sm font-medium mb-1">Total Banks</div>
                 <div class="text-3xl font-bold gradient-text">8</div>
-                <div class="text-xs text-gray-500 mt-1">Central Banks Tracked</div>
+                <div class="text-xs text-slate-400 mt-1">Central Banks Tracked</div>
             </div>
             <div class="stats-card">
-                <div class="text-gray-600 text-sm font-medium mb-2">Average Rate</div>
-                <div class="text-3xl font-bold gradient-text">2.34%</div>
-                <div class="text-xs text-gray-500 mt-1">Global Average</div>
+                <div class="icon-badge bg-violet-50 text-violet-500 mb-4"><i class="fas fa-percentage"></i></div>
+                <div class="text-slate-500 text-sm font-medium mb-1">Average Rate</div>
+                <div class="text-3xl font-bold gradient-text">2.63%</div>
+                <div class="text-xs text-slate-400 mt-1">Global Average</div>
             </div>
         </div>
 
         <!-- Main Table -->
-        <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
             <table id="interest-rates-table" class="interest-rates display responsive nowrap" style="width:100%">
                 <thead>
                     <tr>
@@ -244,56 +261,80 @@
                     <tr>
                         <td>American Fed</td>
                         <td>United States</td>
-                        <td><span class="rate-badge rate-medium">3.75%</span></td>
-                        <td>12-11-2025</td>
+                        <td>
+                            <span class="rate-badge rate-high">4.00%</span>
+                            <i class="fas fa-arrow-up trend-up text-xs ml-1" title="Previous: 3.75%"></i>
+                        </td>
+                        <td>09-17-2026</td>
                         <td><span class="font-semibold">USD</span></td>
                     </tr>
                     <tr>
                         <td>BOE</td>
                         <td>United Kingdom</td>
-                        <td><span class="rate-badge rate-medium">3.75%</span></td>
+                        <td>
+                            <span class="rate-badge rate-high">3.75%</span>
+                            <i class="fas fa-arrow-down trend-down text-xs ml-1" title="Previous: 4.00%"></i>
+                        </td>
                         <td>12-18-2025</td>
                         <td><span class="font-semibold">GBP</span></td>
                     </tr>
                     <tr>
                         <td>RBA</td>
                         <td>Australia</td>
-                        <td><span class="rate-badge rate-medium">3.85%</span></td>
-                        <td>02-03-2026</td>
+                        <td>
+                            <span class="rate-badge rate-high">4.35%</span>
+                            <i class="fas fa-arrow-up trend-up text-xs ml-1" title="Previous: 4.10%"></i>
+                        </td>
+                        <td>05-06-2026</td>
                         <td><span class="font-semibold">AUD</span></td>
                     </tr>
                     <tr>
                         <td>RBNZ</td>
                         <td>New Zealand</td>
-                        <td><span class="rate-badge rate-low">2.25%</span></td>
-                        <td>11-26-2025</td>
+                        <td>
+                            <span class="rate-badge rate-medium">2.75%</span>
+                            <i class="fas fa-arrow-up trend-up text-xs ml-1" title="Previous: 2.50%"></i>
+                        </td>
+                        <td>09-02-2026</td>
                         <td><span class="font-semibold">NZD</span></td>
                     </tr>
                     <tr>
                         <td>BOC</td>
                         <td>Canada</td>
-                        <td><span class="rate-badge rate-low">2.25%</span></td>
+                        <td>
+                            <span class="rate-badge rate-medium">2.25%</span>
+                            <i class="fas fa-arrow-down trend-down text-xs ml-1" title="Previous: 2.50%"></i>
+                        </td>
                         <td>10-29-2025</td>
                         <td><span class="font-semibold">CAD</span></td>
                     </tr>
                     <tr>
                         <td>ECB</td>
                         <td>Europe</td>
-                        <td><span class="rate-badge rate-low">2.15%</span></td>
-                        <td>06-05-2025</td>
+                        <td>
+                            <span class="rate-badge rate-medium">2.65%</span>
+                            <i class="fas fa-arrow-up trend-up text-xs ml-1" title="Previous: 2.40%"></i>
+                        </td>
+                        <td>09-16-2026</td>
                         <td><span class="font-semibold">EUR</span></td>
                     </tr>
                     <tr>
                         <td>BOJ</td>
                         <td>Japan</td>
-                        <td><span class="rate-badge rate-low">0.75%</span></td>
-                        <td>12-19-2025</td>
+                        <td>
+                            <span class="rate-badge rate-low">1.25%</span>
+                            <i class="fas fa-arrow-up trend-up text-xs ml-1" title="Previous: 1.00%"></i>
+                        </td>
+                        <td>09-18-2026</td>
                         <td><span class="font-semibold">JPY</span></td>
                     </tr>
                     <tr>
                         <td>SNB</td>
                         <td>Switzerland</td>
-                        <td><span class="rate-badge rate-low">0.00%</span></td>
+                        <td>
+                            <span class="rate-badge rate-low">0.00%</span>
+                            <i class="fas fa-arrow-down trend-down text-xs ml-1" title="Previous: 0.25%"></i>
+                        </td>
                         <td>06-19-2025</td>
                         <td><span class="font-semibold">CHF</span></td>
                     </tr>
@@ -301,16 +342,32 @@
             </table>
         </div>
 
-        <!-- Interest Differential Section -->
-        <div class="mt-12 glass-card p-8" data-aos="fade-up" data-aos-delay="400">
-            <h2 class="text-4xl font-bold gradient-text mb-6">
-                <i class="fas fa-calculator mr-3"></i>Interest Differential
-            </h2>
+        <!-- Market Structure Reference -->
+        <div class="mt-8 card p-8" data-aos="fade-up" data-aos-delay="250">
+            <div class="flex items-center gap-3 mb-3">
+                <div class="icon-badge bg-indigo-50 text-indigo-500"><i class="fas fa-wave-square"></i></div>
+                <h2 class="text-2xl font-bold text-slate-900">Reading Market Structure</h2>
+            </div>
+            <p class="text-slate-500 mb-6 max-w-2xl">
+                Before trading an interest rate differential, confirm the trend on the price chart itself.
+                Higher highs and higher lows confirm an uptrend — a break into a lower low is often the first sign the structure is shifting.
+            </p>
+            <div class="rounded-xl overflow-hidden border border-slate-100">
+                <img src="css/pics/market-structure.png" alt="Market structure diagram showing a low, a high, a higher high, a higher low, and a lower low breaking trend" class="w-full">
+            </div>
+        </div>
 
-            <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl mb-6">
-                <p class="text-gray-700 text-lg leading-relaxed">
+        <!-- Interest Differential Section -->
+        <div class="mt-8 card p-8" data-aos="fade-up" data-aos-delay="400">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="icon-badge bg-indigo-50 text-indigo-500"><i class="fas fa-calculator"></i></div>
+                <h2 class="text-3xl font-bold text-slate-900">Interest Differential</h2>
+            </div>
+
+            <div class="bg-indigo-50 p-6 rounded-2xl mb-6">
+                <p class="text-slate-600 text-lg leading-relaxed">
                     Interest Differential is the difference between two interest rates. For example:
-                    <span class="font-bold text-purple-600">USD 3.75% - CHF 0.00% = 3.75%</span> Differential.
+                    <span class="font-bold text-indigo-600">USD 4.00% - CHF 0.00% = 4.00%</span> Differential.
                     Couple two currencies with different interest rates. It is always positive for the one with the higher rate.
                 </p>
             </div>
@@ -320,15 +377,15 @@
             </div>
 
             <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl mb-6">
-                <p class="text-gray-700">
+                <p class="text-slate-600">
                     The above image shows the central banks/commitment of traders/commercials (the red line).
                     <strong class="text-yellow-800">NB:</strong> Just because it is above zero basis line does not mean
                     it is a buy, or below zero basis line means it will go down/sell.
                 </p>
             </div>
 
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">
-                <i class="fas fa-search mr-2 text-purple-600"></i>What we are looking for:
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">
+                <i class="fas fa-search mr-2 text-indigo-500"></i>What we are looking for:
             </h3>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
@@ -341,43 +398,43 @@
             </div>
 
             <div class="space-y-4">
-                <div class="flex items-start bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-check-circle text-green-500 text-xl mr-4 mt-1"></i>
+                <div class="flex items-start bg-slate-50 border border-slate-100 p-4 rounded-xl">
+                    <i class="fas fa-check-circle text-emerald-500 text-xl mr-4 mt-1"></i>
                     <div>
-                        <p class="text-gray-700">
-                            Highest Interest Differential between currencies. Example: United States and Switzerland with 3.75% Differential.
-                            <br><strong class="text-purple-600">Example:</strong> USD 3.75% - CHF 0.00% = 3.75%
+                        <p class="text-slate-600">
+                            Highest Interest Differential between currencies. Example: United States and Switzerland with 4.00% Differential.
+                            <br><strong class="text-indigo-600">Example:</strong> USD 4.00% - CHF 0.00% = 4.00%
                         </p>
                     </div>
                 </div>
 
-                <div class="flex items-start bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-check-circle text-green-500 text-xl mr-4 mt-1"></i>
+                <div class="flex items-start bg-slate-50 border border-slate-100 p-4 rounded-xl">
+                    <i class="fas fa-check-circle text-emerald-500 text-xl mr-4 mt-1"></i>
                     <div>
-                        <p class="text-gray-700">
+                        <p class="text-slate-600">
                             Net long/Above zero basis line by commercials or Net short/below zero basis line by commercials
                             for individual coupled currencies.
                         </p>
                     </div>
                 </div>
 
-                <div class="flex items-start bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-check-circle text-green-500 text-xl mr-4 mt-1"></i>
+                <div class="flex items-start bg-slate-50 border border-slate-100 p-4 rounded-xl">
+                    <i class="fas fa-check-circle text-emerald-500 text-xl mr-4 mt-1"></i>
                     <div>
-                        <p class="text-gray-700">
+                        <p class="text-slate-600">
                             To come up with quantitative analysis or buy/sell program, check that coupled currencies have
                             opposite sides from zero basis line.
-                            <br><br><strong class="text-green-600">Conclusion:</strong> USD is bullish if USD is above zero
+                            <br><br><strong class="text-emerald-600">Conclusion:</strong> USD is bullish if USD is above zero
                             basis line and CHF is below zero basis line because USD has a higher interest rate against a weak
                             CHF interest rate.
                         </p>
                     </div>
                 </div>
 
-                <div class="flex items-start bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-check-circle text-green-500 text-xl mr-4 mt-1"></i>
+                <div class="flex items-start bg-slate-50 border border-slate-100 p-4 rounded-xl">
+                    <i class="fas fa-check-circle text-emerald-500 text-xl mr-4 mt-1"></i>
                     <div>
-                        <p class="text-gray-700">
+                        <p class="text-slate-600">
                             Then analyze the individual chart to find market structure break.
                         </p>
                     </div>
@@ -385,29 +442,29 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border-2 border-red-200">
+                <div class="bg-rose-50 p-6 rounded-2xl border border-rose-100">
                     <div class="flex items-center mb-3">
-                        <i class="fas fa-arrow-down text-red-600 text-2xl mr-3"></i>
-                        <h4 class="text-xl font-bold text-red-800">Below Zero Basis Line</h4>
+                        <i class="fas fa-arrow-down text-rose-500 text-2xl mr-3"></i>
+                        <h4 class="text-xl font-bold text-rose-700">Below Zero Basis Line</h4>
                     </div>
-                    <p class="text-gray-700">
+                    <p class="text-slate-600">
                         Commercials are saying the currency is <strong>overbought</strong> and price is likely to go down over time.
                     </p>
                 </div>
 
-                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-2 border-green-200">
+                <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
                     <div class="flex items-center mb-3">
-                        <i class="fas fa-arrow-up text-green-600 text-2xl mr-3"></i>
-                        <h4 class="text-xl font-bold text-green-800">Above Zero Basis Line</h4>
+                        <i class="fas fa-arrow-up text-emerald-500 text-2xl mr-3"></i>
+                        <h4 class="text-xl font-bold text-emerald-700">Above Zero Basis Line</h4>
                     </div>
-                    <p class="text-gray-700">
+                    <p class="text-slate-600">
                         Commercials are saying the currency is <strong>oversold</strong> and price is likely to go up over time.
                     </p>
                 </div>
             </div>
 
             <div class="mt-8 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-xl">
-                <p class="text-gray-700">
+                <p class="text-slate-600">
                     <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
                     On interest charts, you will see small upward movements on a single currency bearish trend. That shows that
                     smart money is hedging, basically taking profits from their short sells previously. And vice versa.
@@ -419,7 +476,7 @@
             </div>
 
             <div class="bg-orange-50 border-l-4 border-orange-400 p-6 rounded-r-xl">
-                <p class="text-gray-700">
+                <p class="text-slate-600">
                     <i class="fas fa-exclamation-triangle text-orange-500 mr-2"></i>
                     <strong>Note:</strong> The interest rate is not the only factor that determines the price of a currency.
                     Other factors such as economic data, geopolitical events, and market sentiment also play a significant role.
@@ -428,16 +485,17 @@
         </div>
 
         <!-- Economic Calendar Widget -->
-        <div class="mt-12 glass-card p-8" data-aos="fade-up" data-aos-delay="600">
-            <h2 class="text-3xl font-bold gradient-text mb-6">
-                <i class="fas fa-calendar-day mr-3"></i>Economic Calendar
-            </h2>
+        <div class="mt-8 card p-8" data-aos="fade-up" data-aos-delay="600">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="icon-badge bg-indigo-50 text-indigo-500"><i class="fas fa-calendar-day"></i></div>
+                <h2 class="text-2xl font-bold text-slate-900">Economic Calendar</h2>
+            </div>
             <div id="economicCalendarWidget"></div>
         </div>
 
         <!-- Footer -->
-        <div class="text-center text-white mt-12 pb-8 opacity-75">
-            <p>Data sourced from <a href="https://www.global-rates.com/en/interest-rates/central-banks/" target="_blank" class="underline hover:opacity-100">Global-Rates.com</a></p>
+        <div class="text-center text-slate-400 mt-12 pb-8 text-sm">
+            <p>Data sourced from <a href="https://www.global-rates.com/en/interest-rates/central-banks/" target="_blank" class="text-indigo-500 hover:text-indigo-600 underline">Global-Rates.com</a></p>
             <p class="mt-2">© 2026 Forex Chart Analysis</p>
         </div>
     </div>
